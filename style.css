@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+    background: #EFEFEF;
+}
+
+body::before {
+    content: ''; 
+    width: 100%;
+    height: 436px;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+    background: #535971;
+    
+}
+
+.page {
+    width: 750px;
+    margin: 0 auto;
+}
+
+header {
+    width: 417px;
+    margin-top: 140px;
+    margin-bottom: 48px;
+}
+
+header h1 {
+    font-family: 'Staatliches', cursive;
+    
+    font-size: 48px;
+    font-weight: 400;
+
+    color: #FFF;
+    
+}
+
+header p {
+    color: #FFF;
+    
+    font-size: 20px;
+    line-height: normal;
+}
+
+form {
+    background: #535971;
+    
+    width: 750px;
+    height: 100%;
+
+    border-radius: 20px 20px 0px 0px;
+    background: #FFF;
+
+    padding: 64px;
+    
+    gap: 16px;
+}
+
+
+fieldset {
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 30px;
+    gap: 16px;
+}
+
+/* fieldset > * {
+    border: 1px solid red;
+} */
+
+fieldset legend {
+    font-family: Staatliches;
+    color: #535971;
+    
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px; 
+
+    border-bottom: 1px solid #E6E6F0;
+    width: 100%;
+
+    padding-bottom: 8px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+
+.input-wrapper label {
+    color: #4E4958;
+    
+    font-size: 14px;
+    line-height: 24px; 
+}
+
+.input-wrapper label span {
+    color: #9f9aac;
+    
+    font-size: 12px;
+    line-height: 20px; 
+
+    margin-left: 9.12px
+
+}
+
+.input-wrapper input {
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+
+    width: 100%;
+    height: 56px;
+
+    padding:0 24px;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.name-box  {
+    display: flex;
+    justify-content: space-between;   
+
+    margin-top: 26px;
+    gap: 22px;
+}
+
+.input-wrapper #email, #password, #event-name {
+    width: 622px;
+}
+
+fieldset .legendfirst {
+    line-height: 34px;
+    font-size: 20px;
+
+    margin-top: 32px;
+    border: none;
+}
+
+.col-3 {
+    display: flex;
+}
+
+.col-3 > div:nth-child(1) {
+    width: 300px;
+    margin-right: 32px;
+}
+
+.col-3 > div:nth-child(2) {
+    width: 140px;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.col-3 > div:nth-child(3) {
+    width: 140px;
+    gap: 10px;
+}
+
+footer {
+    background: #535971;
+
+    height: 160px;
+
+    border-radius: 0 0 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 52px 71px;
+
+    margin-bottom: 100px;
+
+}
+
+footer .button{
+    height: 56px;
+    border-radius: 20px;
+    border: 0;
+    background: #FF5374;
+    
+    font-family: Staatliches;
+    font-size: 20px;
+    color: #FFF;
+}
+
+footer .button:hover {
+    background: #e74162;
+}
+
+input:invalid {
+    border: 1px solid #e74162 ;
+}
